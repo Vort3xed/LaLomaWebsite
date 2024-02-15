@@ -1,0 +1,30 @@
+{
+  "productsArray": [
+    {
+      "id": 1,
+      "product": "Product 1",
+      "cost": 100,
+      "type": "Basic"
+    },
+    {
+      "id": 1,
+      "product": "Product 2",
+      "cost": 10000,
+      "type": "Premium"
+    },
+    {
+      "id": 1,
+      "product": "Product 1",
+      "cost": 100,
+      "type": "Unit"
+    }
+  ],
+  "smallProductsArray": [
+    {
+      "id": 1,
+      "product": "Product 1",
+      "cost": 100,
+      "type": "Unit"
+    }
+  ]
+}

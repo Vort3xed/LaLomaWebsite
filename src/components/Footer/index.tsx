@@ -21,7 +21,7 @@ const Footer = () => {
                 />
               </Link>
               <p className="mb-8 max-w-[270px] text-base text-gray-7">
-                There's no better place to leave your dog.
+                There&apos;s no better place to leave your dog.
               </p>
               <div className="-mx-3 flex items-center">
                 <a

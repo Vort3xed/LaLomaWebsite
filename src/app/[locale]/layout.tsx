@@ -7,7 +7,7 @@ import { SessionProvider } from "next-auth/react";
 import { ThemeProvider } from "next-themes";
 import "../../styles/index.css";
 import "../../styles/prism-vsc-dark-plus.css";
-import ToasterContext from "./api/contex/ToasetContex";
+// import ToasterContext from "./api/contex/ToasetContex";
 import { useRouter } from "next/navigation";
 import { IntlProvider, useIntl } from "react-intl";
 
@@ -32,7 +32,7 @@ export default function RootLayout({
             enableSystem={false}
             defaultTheme="light"
           >
-            <ToasterContext />
+            {/* <ToasterContext /> */}
             <Header />
             {children}
             <Footer />

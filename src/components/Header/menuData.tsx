@@ -8,16 +8,23 @@ const menuData: Menu[] = [
     newTab: false,
   },
   {
-    id: 2,
+    id: 8,
     title: "About",
-    path: "/about",
     newTab: false,
-  },
-  {
-    id: 3,
-    title: "Pricing",
-    path: "/pricing",
-    newTab: false,
+    submenu: [
+      {
+        id: 81,
+        title: "About Us",
+        path: "/about",
+        newTab: false,
+      },
+      {
+        id: 82,
+        title: "Mission and Vision",
+        path: "/pricing",
+        newTab: false,
+      }
+    ],
   },
   {
     id: 5,
@@ -26,36 +33,67 @@ const menuData: Menu[] = [
     newTab: false,
   },
   {
-    id: 5,
+    id: 8,
     title: "Services",
-    path: "/services",
+    newTab: false,
+    submenu: [
+      {
+        id: 81,
+        title: "Working Dogs",
+        path: "/services/working-dogs",
+        newTab: false,
+      },
+      {
+        id: 82,
+        title: "Pets",
+        path: "/services/pets",
+        newTab: false,
+      },
+      {
+        id: 82,
+        title: "Doggy Daycare",
+        path: "/services/doggy-daycare",
+        newTab: false,
+      },
+      {
+        id: 82,
+        title: "Hotel",
+        path: "/services/hotel",
+        newTab: false,
+      }
+    ],
+  },
+  {
+    id: 7,
+    title: "Store",
+    path: "/store",
     newTab: false,
   },
   {
-    id: 6,
+    id: 8,
     title: "Pages",
     newTab: false,
     submenu: [
       {
-        id: 61,
+        id: 81,
         title: "About Page",
         path: "/about",
         newTab: false,
       },
       {
-        id: 62,
+        id: 82,
         title: "Pricing Page",
         path: "/pricing",
         newTab: false,
       },
       {
-        id: 63,
+        id: 83,
         title: "Contact Page",
         path: "/contact",
         newTab: false,
       },
       {
-        id: 64,
+        id: 84,
         title: "Error Page",
         path: "/error",
         newTab: false,
@@ -63,24 +101,24 @@ const menuData: Menu[] = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     title: "Select Language",
     newTab: false,
     submenu: [
       {
-        id: 71,
+        id: 91,
         title: "English",
         locale: "en",
         newTab: false,
       },
       {
-        id: 72,
+        id: 92,
         title: "Spanish",
         locale: "es",
         newTab: false,
       },
       {
-        id: 73,
+        id: 93,
         title: "French",
         locale: "fr",
         newTab: false,

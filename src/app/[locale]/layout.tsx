@@ -10,6 +10,7 @@ import "../../styles/prism-vsc-dark-plus.css";
 // import ToasterContext from "./api/contex/ToasetContex";
 import { useRouter } from "next/navigation";
 import { IntlProvider, useIntl } from "react-intl";
+import { AOSInit } from '../../aos'
 
 export default function RootLayout({
   children,
@@ -24,7 +25,7 @@ export default function RootLayout({
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-
+      <AOSInit />
       <body>
         <SessionProvider>
           <ThemeProvider

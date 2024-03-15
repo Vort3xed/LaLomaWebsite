@@ -1,21 +1,23 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Faq from "@/components/Faq";
-import Pricing from "@/components/Pricing";
+import Contact from "@/components/Contact";
 import { Metadata } from "next";
+import Pricing from "@/components/Pricing";
+import StoreItems from "@/components/StoreItems";
 
 export const metadata: Metadata = {
   title: "La Loma",
   description: "All the dog care you could ever need",
 };
 
-const PricingPage = () => {
+const StorePage = () => {
   return (
     <>
-      <Breadcrumb pageName="Pricing Page" />
+      <Breadcrumb pageName="Store" />
+
       <Pricing />
-      <Faq />
+      <StoreItems />
     </>
   );
 };
 
-export default PricingPage;
+export default StorePage;

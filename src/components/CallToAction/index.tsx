@@ -23,7 +23,7 @@ const CallToAction = () => {
                   href="/"
                   className="bg-tertiary inline-block rounded-md border border-transparent px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]"
                 >
-                  Explore!
+                  Free Consultation!
                 </Link>
               </div>
             </div>

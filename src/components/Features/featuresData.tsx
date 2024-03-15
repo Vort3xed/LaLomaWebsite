@@ -1,4 +1,7 @@
 import { Feature } from "@/types/feature";
+import { useLocale } from 'next-intl';
+
+// const locale = useLocale();
 
 const featuresData: Feature[] = [
   {
@@ -20,7 +23,7 @@ const featuresData: Feature[] = [
     title: "Working Dogs",
     paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
     btn: "Learn More",
-    btnLink: "/services/working-dogs",
+    btnLink: "/working-dogs",
   },
   {
     id: 2,
@@ -41,7 +44,7 @@ const featuresData: Feature[] = [
     title: "Pets",
     paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
     btn: "Learn More",
-    btnLink: "/services/pets",
+    btnLink: "/pets",
   },
   {
     id: 3,
@@ -62,7 +65,7 @@ const featuresData: Feature[] = [
     title: "Doggy Daycare",
     paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
     btn: "Learn More",
-    btnLink: "/services/doggy-daycare",
+    btnLink: "/doggy-daycare",
   },
   {
     id: 4,
@@ -83,7 +86,7 @@ const featuresData: Feature[] = [
     title: "Hotel",
     paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
     btn: "Learn More",
-    btnLink: "/services/hotel",
+    btnLink: "/hotel",
   },
 ];
 export default featuresData;

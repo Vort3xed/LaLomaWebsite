@@ -1,17 +1,19 @@
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
 import ResponsiveCarousel from "../ResponsiveCarousel/ResponsiveCarousel";
+import { useLocale } from 'next-intl';
 
 
 const About = () => {
   const t = useTranslations('About');
+  const locale = useLocale();
   return (
     <section
       id="about"
-      className="bg-gray-7 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]"
+      className="bg-gray-7 pb-8 pt-10 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]"
     >
       <div className="container">
-        <div className="wow fadeInUp" data-wow-delay=".2s">
+        <div className="" data-aos="fade-up" data-aos-delay=".2">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
@@ -25,7 +27,7 @@ const About = () => {
                 </p>
 
                 <a
-                  href="/#"
+                  href={"/" + locale + "/services"}
                   className="inline-flex items-center justify-center rounded-md bg-tertiary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
                   about.buttonText

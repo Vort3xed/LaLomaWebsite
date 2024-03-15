@@ -7,9 +7,10 @@ import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Pricing from "@/components/Pricing";
 import Team from "@/components/Team";
+import Brands from "@/components/Brands";
 import Testimonials from "@/components/Testimonials";
+import BlankFeatures from "@/components/BlankFeatures";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
 
@@ -24,13 +25,14 @@ export default function Home() {
   return (
     <main>
       <ScrollUp />
-      
-      <About />
       <Hero />
-      <Features />
+      <About />
+      
+      {/* <Features /> */}
+      <BlankFeatures />
       <CallToAction />
-      <Pricing />
       <Testimonials />
+      <Brands />
       {/* <Faq /> */}
       {/* <Team /> */}
       {/* <HomeBlogSection posts={posts} /> */}

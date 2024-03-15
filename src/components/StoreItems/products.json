@@ -1,0 +1,25 @@
+{
+  "shopItemsArray": [
+    {
+      "id": 1,
+      "product": "Product 1",
+      "cost": 100,
+      "imageUrl": "/images/products/hamburger.jpg",
+      "type": "Basic"
+    },
+    {
+      "id": 1,
+      "product": "Product 2",
+      "cost": 10000,
+      "imageUrl": "/images/products/hamburger.jpg",
+      "type": "Premium"
+    },
+    {
+      "id": 1,
+      "product": "Product 1",
+      "cost": 100,
+      "imageUrl": "/images/products/hamburger.jpg",
+      "type": "Unit"
+    }
+  ]
+}

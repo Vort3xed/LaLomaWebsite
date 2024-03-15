@@ -4,7 +4,7 @@ import SectionTitle from "../Common/SectionTitle";
 import PricingBox from "./PricingBox";
 import products from "./products.json";
 
-const Pricing = () => {
+const StoreItems = () => {
   // const [products, setProducts] = useState([]);
 
   // useEffect(() => {
@@ -19,14 +19,14 @@ const Pricing = () => {
   return (
     <section
       id="pricing"
-      className="relative z-20 overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]"
+      className="relative z-20 overflow-hidden bg-white pb-12 pt-10 dark:bg-dark lg:pb-[30px] lg:pt-[60px]"
     >
       <div className="container">
         <div className="mb-[60px]">
           <SectionTitle
-            subtitle="Service Plans"
-            title="Our Service Plans"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            subtitle="Shop Items"
+            title="Our Shop Items"
+            paragraph="These are the items we have at sale. These items can only be purchased at our in-person store."
             center
           />
         </div>
@@ -36,8 +36,8 @@ const Pricing = () => {
             <PricingBox key={1} product={product} />
           ))} */}
 
-          {products.productsArray.map((product, i) => (
-            <PricingBox key={i} product={product.product} cost={product.cost} type={product.type}/>
+          {products.shopItemsArray.map((product, i) => (
+            <PricingBox key={i} product={product.product} cost={product.cost} imageUrl={product.imageUrl} type={product.type}/>
           ))}
 
           {/*           
@@ -91,4 +91,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default StoreItems;

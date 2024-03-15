@@ -1,10 +1,12 @@
+'use client';
 import { Feature } from "@/types/feature";
 import Link from "next/link";
 import { useLocale } from 'next-intl';
+import { usePathname } from 'next/navigation';
 
 const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, title, paragraph, btn, btnLink } = feature;
-  const locale = useLocale();
+  const pathname = usePathname();
   return (
     <div className="w-full px-4 md:w-1/2 lg:w-1/4">
       <div className="wow fadeInUp group mb-12" data-wow-delay=".15s">
@@ -19,11 +21,15 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           {paragraph}
         </p>
         <Link
-          href={locale + btnLink}
+          href={pathname + btnLink}
           className="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary"
         >
           {btn}
         </Link>
+
+        {/* <a href={pathname + btnLink}>
+          {btn}
+        </a> */}
       </div>
     </div>
   );

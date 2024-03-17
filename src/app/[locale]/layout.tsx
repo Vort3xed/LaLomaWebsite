@@ -12,6 +12,7 @@ import SocialsBar from "@/components/SocialsBar";
 import { useRouter } from "next/navigation";
 import { IntlProvider, useIntl } from "react-intl";
 import { AOSInit } from '../../aos'
+import { Analytics } from "@vercel/analytics/react"
 
 export default function RootLayout({
   children,
@@ -37,10 +38,10 @@ export default function RootLayout({
             {/* <ToasterContext /> */}
             <Header />
             {children}
-            
             <Footer />
             <SocialsBar />
             <ScrollToTop />
+            <Analytics />
           </ThemeProvider>
         </SessionProvider>
       </body>

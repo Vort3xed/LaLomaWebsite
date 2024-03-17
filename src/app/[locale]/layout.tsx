@@ -8,6 +8,7 @@ import { ThemeProvider } from "next-themes";
 import "../../styles/index.css";
 import "../../styles/prism-vsc-dark-plus.css";
 // import ToasterContext from "./api/contex/ToasetContex";
+import SocialsBar from "@/components/SocialsBar";
 import { useRouter } from "next/navigation";
 import { IntlProvider, useIntl } from "react-intl";
 import { AOSInit } from '../../aos'
@@ -36,7 +37,9 @@ export default function RootLayout({
             {/* <ToasterContext /> */}
             <Header />
             {children}
+            
             <Footer />
+            <SocialsBar />
             <ScrollToTop />
           </ThemeProvider>
         </SessionProvider>

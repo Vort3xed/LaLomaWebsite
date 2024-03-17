@@ -4,7 +4,7 @@ import { Brand } from "@/types/brand";
 
 const Brands = () => {
   return (
-    <section className="py-16 dark:bg-dark">
+    <section className="py-6 dark:bg-dark">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">

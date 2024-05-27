@@ -21,7 +21,7 @@ const menuData: Menu[] = [
       {
         id: 82,
         title: "Mission and Vision",
-        path: "/pricing",
+        path: "/mission",
         newTab: false,
       }
     ],
@@ -39,24 +39,30 @@ const menuData: Menu[] = [
     submenu: [
       {
         id: 81,
+        title: "Our Services",
+        path: "/services/",
+        newTab: false,
+      },
+      {
+        id: 82,
         title: "Working Dogs",
         path: "/services/working-dogs",
         newTab: false,
       },
       {
-        id: 82,
+        id: 83,
         title: "Pets",
         path: "/services/pets",
         newTab: false,
       },
       {
-        id: 82,
+        id: 84,
         title: "Doggy Daycare",
         path: "/services/doggy-daycare",
         newTab: false,
       },
       {
-        id: 82,
+        id: 85,
         title: "Hotel",
         path: "/services/hotel",
         newTab: false,

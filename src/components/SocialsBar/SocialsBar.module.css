@@ -4,7 +4,7 @@
 }
 
 .socialsBar > a {
-  @apply my-4 text-white;
+  @apply my-4
 }
 
 .socialsBarIcons {

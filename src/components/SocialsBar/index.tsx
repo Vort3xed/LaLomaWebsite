@@ -4,7 +4,7 @@ import Styles from './SocialsBar.module.css';
 const ICON_SIZE = 36;
 const SocialsBar = () => {
   return (
-    <section className={Styles.socialsBar}>
+    <section className={`${Styles.socialsBar} text-dark dark:text-white`}>
       <a
         href="https://www.facebook.com/"
         target="_blank"

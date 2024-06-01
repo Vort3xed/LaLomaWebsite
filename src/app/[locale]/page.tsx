@@ -10,6 +10,7 @@ import Hero from "@/components/Hero";
 import Team from "@/components/Team";
 import Brands from "@/components/Brands";
 import Testimonials from "@/components/Testimonials";
+import Calendar from "@/components/Calendar";
 import BlankFeatures from "@/components/BlankFeatures";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
@@ -33,6 +34,7 @@ export default function Home() {
       <CallToAction />
       <Testimonials />
       <Brands />
+      <Calendar />
       {/* <Faq /> */}
       {/* <Team /> */}
       {/* <HomeBlogSection posts={posts} /> */}

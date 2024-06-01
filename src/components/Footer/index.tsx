@@ -21,7 +21,7 @@ const Footer = () => {
                 />
               </Link>
               <p className="mb-8 max-w-[270px] text-base text-gray-7">
-                There&apos;s no better place to leave your dog.
+                Lugar tipo un la mexicana privado donde las personas puedan ir a disfrutar a sus perros.
               </p>
               <div className="-mx-3 flex items-center">
                 <a
